@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>PhotoEdition</title>
+</head>
+<body>
+  <header>
+    <div class="dropdown" style="float:left;">
+      <button class="dropbtn"><i class="fa fa-bars"></i></button>
+      <div class="dropdown-content" style="left:0;">
+        <a href="index.html"><button class="botton"><i class="fa fa-home"></i></button></a>
+        <a href="servicios.html"><button class="botton"><i class="fa fa-cart-shopping"></i></button></a>
+        <a href="nosotros.html"><button class="botton"><i class="fa fa-user"></i></button></a>
+      </div>
+      </div>
+</header>
+<div>
+<main>             
+    <h1 class="miclase3"> ¿Qué es la fotografía y qué hacemos?</h1>
+    <section>
+          <p>
+           La fotografía es el arte y la técnica de obtener imágenes duraderas debido a la acción de la luz.
+            <br>
+            <br>
+            Las ediciones consisten en editar una imagen para adaptarla el gusto propio o el de alguien más estética y haciendolo más atractivo al ojo humano.
+          <br>
+          <br>
+          </p>
+          <h1 class="Mision">Misión</h1>
+                <div class="textmision"> Toma de fotografía social y comercial/publicitaria, producción de álbumes de fotos, fotos enmarcadas, así como copias electrónicas
+                de las fotos editadas según lo solicitado por nuestros clientes. Cubrir todo tipo de eventos locales entregando un producto
+                novedoso y de excelente calidad que permita la capturara de momentos inolvidables. 
+          </div>
+          <h1 class="Vision">Visión </h1> 
+                <div class="textvision">Para el año 2027 convertirse en una marca de fotografía de clase nacional y estar entre los 5 primeros líderes en el comercio de la
+                fotografía capaz de generar emociones y recuerdos de todo tipo.
+                </div>
+              <div class="cird">
+              <img src="img/Foto_Samuel.jpg" alt="Samuel" style="width: 100%; height: 100%;">
+            <h1>Samuel Cuero Banguero</h1>
+            <p class="title">CEO & Founder, Example</p>
+            <p>Institución Bahía de Buenaventura</p>
+            <div style="margin: 24px 0;">
+            <a href="#"><i class="fa fa-dribbble"></i></a> 
+            <a href="#"><i class="fa fa-twitter"></i></a>  
+            <a href="#"><i class="fa fa-linkedin"></i></a>  
+            <a href="#"><i class="fa fa-facebook"></i></a> 
+          </div>
+          <p><button class="bitton">Contact</button></p>
+</div>
+    </section>
+</main>
+<script>
+  let slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+    setTimeout(showSlides, 4000); // Change image every 2 seconds
+  }
+  // Get the modal
+  var modal = document.getElementById('id01');
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+</div>
+<footer class="fiter">
+          Hecho por Samuel Cuero Banguero 
+          <br>
+          <br>
+          Contáctanos en: Facebook, Instagram y WhatsApp
+          <i class="glyphicon glyphicon-thumbs-up"></i>
+</footer>
+</body>
+</html>

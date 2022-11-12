@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="author" content="Samuel Cuero Banguero">
+  <title>Servicios </title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+  integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+  <header>
+    <div class="dropdown" style="float:left;">
+      <button class="dropbtn"><i class="fa fa-bars"></i></button>
+      <div class="dropdown-content" style="left:0;">
+        <a href="index.html"><button class="botton"><i class="fa fa-home"></i></button></a>
+        <a href="servicios.html"><button class="botton"><i class="fa fa-cart-shopping"></i></button></a>
+        <a href="nosotros.html"><button class="botton"><i class="fa fa-user"></i></button></a>
+      </div>
+      </div>
+  </header>
+  <p>
+    Los servicios que ofrecemos son los siguientes:
+  </p>
+  <div class="card-container">
+
+    <div class="card">
+      <img src="img/Hierro.png" alt="Denim Jeans" style="width:100%">
+      <h1>PhotoBook Básico</h1>
+      <p class="price">200.000$-300.000$COP</p>
+      <p>Incluye: 20x40 cm abierto - 20x20 cm cerrado. <br>
+        Hasta 30 fotos. <br>
+        5 Hojas y 20 páginas. <br>
+        2 Horas de fotografía. <br>
+        Mini foto estudio. <br>
+        Recibe todas las fotos tomadas en jpg. <br>
+        Transporte a la locación(dentro de B/tura) <br>
+    </p>
+      <p><button class="Card_Button">Add to Cart</button></p>
+    </div>
+    
+    <div class="PhotoBook_Intermedio">
+      <img src="img/Oro.png" alt="Denim Jeans" style="width:100%">
+      <h1>PhotoBook Intermedio</h1>
+      <p class="price">350.000 - 500.000 COP.</p>
+      <p>Incluye: 30x40 cm abierto. <br>
+        Hasta 50 fotos. <br>
+        10 Hojas. <br>
+        3 Horas de fotografía. <br>
+        Recibe todas las fotos del evento en jpg. <br>
+        Mini foto estudio Prequince. <br>
+        Foto Afiche 40x50 cm con retablo. <br>
+        Pasta dura personalizada. <br>
+        Transporte a la locación (dentro de B/tura). <br>
+      </p>
+      <p><button class="Card_Button">Add to Cart</button></p>
+    </div>
+    
+    <div class="PhotoBook_de_lujo">
+      <img src="img/Diamante.png" alt="Denim Jeans" style="width:100%">
+      <h1>PhotoBook de PhotoBook_de_lujo</h1>
+      <p class="price">600.000 - 800.000 COP</p>
+      <p>30x60 cm Abierto - 40x40 cm cerrado. <br>
+        Hasta 80 fotos. <br>
+        10 Hojas. <br>
+        4 Horas de fotografía. <br>
+        Recibe todas las fotos del evento en jpg. <br>
+        Foto estudio Prequince. <br>
+        Foto Afiche 50x70 cm con retablo. <br>
+        Pasta Abullonada o imantada. <br>
+        Transporte a la Locación (Dentro de B/tura). <br>
+      </p>
+      <p><button class="Card_Button">Add to Cart</button></p>
+    </div>
+    
+    <div class="PhotoBook_Luxuri">
+      <img src="img/Esmeralda.png" alt="Denim Jeans" style="width:100%">
+      <h1>PhotoBook Luxuri</h1>
+      <p class="price">900.000 - 1’200.000 COP</p>
+      <p>
+        Incluye:40x80 cm Abierto - 40x40 cm cerrado. <br>
+        Hasta 100 fotos. <br>
+        15 Hojas. <br>
+        5 Horas de fotografía. <br>
+        Recibe todas las fotos del evento en jpg. <br>
+        Foto estudio Prequince. <br>
+        Foto Afiche 50x70 cm con retablo. <br>
+        Pasta Abullonada o imantada. <br>
+        Transporte a la locación dentro de la ciudad. <br>
+        Caja en madera con pino diseño en laser 100.000 Pesos Colombianos(COP).
+      </p>
+      <p><button class="Card_Button">Add to Cart</button></p>
+    </div>
+    <script>
+      let slideIndex = 0;
+      showSlides();
+  
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 4000); // Change image every 2 seconds
+      }
+      // Get the modal
+      var modal = document.getElementById('id01');
+  
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    </script>
+  </div>
+
+</body>
+
+</html>
